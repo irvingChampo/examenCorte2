@@ -5,7 +5,16 @@ import TokenAnalysisTable from "../Components/Molecules/CodeAnalysisTable";
 import "../Styles/App.css";
 
 export default function Home() {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState(`def main():
+    edad = 22
+    escuela = "upchiapas"
+    if edad > 18:
+        print("Mayor de edad")
+    if escuela.lower() == "upchiapas":
+        print("Bienvenido a UPChiapas")
+
+if __name__ == "__main__":
+    main()`);
   const [result, setResult] = useState("");
   const [isAnalyzing, setIsAnalyzing] = useState(false);
 
@@ -43,7 +52,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="left-panel">
-        <h2 className="panel-title">Analizador de Código Rebol</h2>
+        <h2 className="panel-title">Analizador de Código Python</h2>
         <FileUploader onFileUpload={setCode} />
         <CodeInput 
           code={code} 
