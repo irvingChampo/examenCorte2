@@ -1,0 +1,34 @@
+.code-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.code-block,
+.result-block {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow: auto;
+    border: solid;
+
+}
+
+.code-block h3,
+.result-block h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+pre {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  color: #111827;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
